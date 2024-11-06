@@ -12,20 +12,20 @@
   <body>
     <div class="container">
       <h1> Form Biodata Mahasiswa</h1>
-      <form action="" method="POST">
-        <label for="NIM">NIM</label><input type="text" name="NIM" value="" id="NIM">
-        <label for="Nama">Nama</label><input type="text" name="Nama" value="" id="Nama">
+      <form action="index_link.php" method="POST">
+        <label for="NIM" style="font-family: 'Ubuntu';">NIM</label><input type="text" name="NIM" value="" id="NIM">
+        <label for="Nama" style="font-family: 'Ubuntu';">Nama</label><input type="text" name="Nama" value="" id="Nama">
 
         <div class = "radioButtons">
           <span> Jenis Kelamin </span><br>
-          <input type="radio" name="Jenis_kelamin" value="Pria" id="Jenis_kelamin1"><label for="Jenis_kelamin1" id="pria">Pria</label>
-          <input type="radio" name="Jenis_kelamin" value="Wanita" id="Jenis_kelamin2"><label for="Jenis_kelamin2" id="wanita">Wanita</label>
+          <input type="radio" name="Jenis_kelamin" value="Pria" id="Jenis_kelamin1"><label for="Jenis_kelamin1" id="pria" style="font-family: 'Ubuntu';">Pria</label>
+          <input type="radio" name="Jenis_kelamin" value="Wanita" id="Jenis_kelamin2"><label for="Jenis_kelamin2" id="wanita" style="font-family: 'Ubuntu';">Wanita</label>
           <br>
           <br>
         </div>
-        <label for="Alamat">Alamat</label><input type="text" name="Alamat" value="" id="Alamat">
-        <label for="Nomor_telepon">Nomor telepon</label><input type="text" name="Nomor_telepon" value="" id="Nomor_telepon">
-        <label for="Email">Email</label><input type="text" name="Email" value="" id="Email">
+        <label for="Alamat" style="font-family: 'Ubuntu';">Alamat</label><input type="text" name="Alamat" value="" id="Alamat">
+        <label for="Nomor_telepon" style="font-family: 'Ubuntu';">Nomor telepon</label><input type="text" name="Nomor_telepon" value="" id="Nomor_telepon">
+        <label for="Email" style="font-family: 'Ubuntu';">Email</label><input type="text" name="Email" value="" id="Email">
         <input type="submit" name="button" id=SubmitData value="Submit">
 
 
@@ -44,9 +44,13 @@
 
       }
       ?>
+
     </div>
 
 
 
   </body>
 </html>
+
+
+  
