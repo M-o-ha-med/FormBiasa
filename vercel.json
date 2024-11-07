@@ -6,6 +6,6 @@
   },
   "routes": [
     { "src": "/",  "dest": "/api/index.php" },
-    { "src": "/download.php",  "dest": "/api/download.php" }
+    { "src": "/download",  "dest": "/api/download.php" }
   ]
 }
