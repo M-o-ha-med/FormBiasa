@@ -92,7 +92,7 @@
 
       </form>
       <?PHP
-      @ob_start();
+      ob_start();
       session_start();
       if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $_SESSION['NIM'] = $_POST['NIM'];
@@ -104,6 +104,7 @@
       echo "<h3>Data berhasil disimpan!</h3>";
       echo "<a href='download.php'>Download csv</a>";
       }
+      ob_end_flush();
       ?>
 
      
