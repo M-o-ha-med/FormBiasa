@@ -120,7 +120,7 @@
       $_SESSION['Nomor_telepon'] = $_POST['Nomor_telepon'];
       $_SESSION['Email'] =   $_POST['Email'];
       echo "<h3>Data berhasil disimpan!</h3>";
-      echo "<a href='#' onclick="downloadCV()">Download csv</a>";
+      echo "<a href='#' onclick='downloadCV()'>Download csv</a>";
       }
 
       
