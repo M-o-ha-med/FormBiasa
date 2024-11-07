@@ -92,7 +92,17 @@
 
       </form>
       <?PHP
-      function downloadCV(){
+      
+      session_start();
+      if ($_SERVER["REQUEST_METHOD"] == "POST") {
+      $_SESSION['NIM'] = $_POST['NIM'];
+      $_SESSION['Nama'] = $_POST['Nama'];
+      $_SESSION['Jenis_kelamin'] = $_POST['Jenis_kelamin'];
+      $_SESSION['Alamat'] = $_POST['Alamat'];
+      $_SESSION['Nomor_telepon'] = $_POST['Nomor_telepon'];
+      $_SESSION['Email'] =   $_POST['Email'];
+      echo "<h3>Data berhasil disimpan!</h3>";
+      echo "<a href='#' onclick='{
             $nim = $_SESSION['NIM'];
             $nama = $_SESSION['Nama'];
             $gender = $_SESSION['Jenis_kelamin'];
@@ -109,19 +119,9 @@
                 fputcsv($fp, $line);
             }
             fclose($fp);
-
+      }'>Download csv</a>";
       }
-      session_start();
-      if ($_SERVER["REQUEST_METHOD"] == "POST") {
-      $_SESSION['NIM'] = $_POST['NIM'];
-      $_SESSION['Nama'] = $_POST['Nama'];
-      $_SESSION['Jenis_kelamin'] = $_POST['Jenis_kelamin'];
-      $_SESSION['Alamat'] = $_POST['Alamat'];
-      $_SESSION['Nomor_telepon'] = $_POST['Nomor_telepon'];
-      $_SESSION['Email'] =   $_POST['Email'];
-      echo "<h3>Data berhasil disimpan!</h3>";
-      echo "<a href='#' onclick='downloadCV()'>Download csv</a>";
-      }
+        
 
       
       ?>
