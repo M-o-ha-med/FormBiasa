@@ -102,7 +102,7 @@
       $_SESSION['Nomor_telepon'] = $_POST['Nomor_telepon'];
       $_SESSION['Email'] =   $_POST['Email'];
       echo "<h3>Data berhasil disimpan!</h3>";
-      echo "<a href='download.php'>Download csv</a>";
+      echo "<a href='/download'>Download csv</a>";
       }
       ob_end_flush();
       ?>
