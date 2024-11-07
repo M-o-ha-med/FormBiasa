@@ -1,9 +1,9 @@
 {
   "functions": {
-    "api/download.php": {
+    "api/index.php": {
       "runtime": "vercel-php@0.7.3"
     },
-    "api/index.php": {
+    "api/download.php": {
       "runtime": "vercel-php@0.7.3"
     }
   }
