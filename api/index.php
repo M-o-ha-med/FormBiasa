@@ -91,7 +91,8 @@
 
 
       </form>
-      <?php
+      <?PHP
+      @ob_start();
       session_start();
       if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $_SESSION['NIM'] = $_POST['NIM'];
