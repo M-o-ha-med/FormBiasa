@@ -1,4 +1,3 @@
-<?php
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -30,9 +29,9 @@
 
 
       </form>
-      
-      if ($_SERVER["REQUEST_METHOD"] == "POST") {
+      <?php
       session_start();
+      if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $_SESSION['NIM'] = $_POST['NIM'];
       $_SESSION['Nama'] = $_POST['Nama'];
       $_SESSION['Jenis_kelamin'] = $_POST['Jenis_kelamin'];
@@ -41,8 +40,9 @@
       $_SESSION['Email'] =   $_POST['Email'];
       echo "<h3>Data berhasil disimpan!</h3>";
       echo "<a href='download.php'>Download csv</a>";
-
       }
+      ?>
+
      
     </div>
 
@@ -50,4 +50,3 @@
 
   </body>
 </html>
- ?>
